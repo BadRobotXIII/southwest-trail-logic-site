@@ -5,7 +5,7 @@ import eslintConfigPrettier, { rules } from 'eslint-config-prettier';
 
 export default [
     {
-        files: ['**/*.ts'],
+        files: ['*/*.ts'],
         languageOptions: {
             parser: tsParser,
             sourceType: 'module',

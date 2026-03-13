@@ -1,0 +1,117 @@
+:root {
+  --primary-color: #080a3a;
+  --primary-hover: #0a0d4d;
+  --transition-speed: 0.2s;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color:#fff;
+}
+
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: rgba(0,0,0,0.8);
+}
+
+
+.center-wrapper{
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    place-items: center;
+    padding-bottom: 1em;
+    background-color: none;
+}
+
+#banner-index{
+    mask-image: radial-gradient(circle, black 50%, transparent 80%);
+    max-width: 800px;
+    width: 100%
+}
+
+#image-logo-art{
+    place-items: center;
+    width: 800px;
+    height: 600px;
+}
+
+.btn{
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all car(--transition-speed);
+    font-family: inherit;
+}
+
+#btn-home{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    place-items: center;
+    filter: drop-shadow(0 0 2em #3178c6aa);
+}
+
+#btn-enter-here{
+    display: grid;
+    width: 20rem;
+    height: 5rem;
+    place-items: center;
+    border-radius: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-weight: 100;
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    color: rgb(175, 175, 175);
+    font-size: 2.2rem;
+    filter: drop-shadow(0 0 0.5em #3178c6aa);
+    box-shadow: 
+    0 0 5px rgba(26, 42, 108, 0.8),
+    0 0 15px rgba(26, 42, 108, 0.4);
+
+}
+
+#btn-enter-here:hover{
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+div{
+    place-items: center;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.hero{
+    min-height: 100vh;
+    background: fixed
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url('/images/hero-placeholder.jpg') center center / cover no-repeat;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.hero-overlay h1{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;   
+}
+
+.hero-overlay p{
+    font-size: 1.25rem;
+}
