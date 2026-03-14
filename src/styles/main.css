@@ -137,8 +137,8 @@ body{
 }
 
 #image-logo-art{
-    width: clamp(3.0em, 9vw, 9.5em);
-    height: clamp(3.0em, 9vw, 9.5em);
+    width: clamp(1.0em, 7vw, 9.5em);
+    height: clamp(1.0em, 7vw, 9.5em);
 }
 
 /* Index.html styling */
@@ -172,11 +172,6 @@ body{
     font-weight: 100;
     padding: 7px 5px;
     font-size: 1.7rem;
-    /*
-    background-color: var(--primary-color);
-    color: rgb(175, 175, 175);
-    filter: drop-shadow(0 0 0.5em #3178c6aa);
-     */
     box-shadow:
     0 0 15px rgba(26, 42, 108, 0.8),
     0 0 30px rgba(26, 42, 108, 0.4);
