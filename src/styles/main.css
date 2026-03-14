@@ -1,47 +1,21 @@
 :root {
   --primary-color: #080a3a;
+  --primary-heading: #ffc380;
+  --primary-text: #f5f5f5;
+  --secondary-text: #dfdfdf;
+  --primary--links: #a8a8a8;
   --primary-hover: #0a0d4d;
-  --transition-speed: 0.2s;
+  --accent-line: #e5e5e5;
+  --aceent-line-hover: #a8a8a8;
+  --transition-speed: 300ms;
 }
 
 body{
+    width: auto;
     margin: 0;
     font-family: Arial, sans-serif;
     background: #111;
     color:#fff;
-}
-
-.site-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background: rgba(0,0,0,0.8);
-}
-
-
-.center-wrapper{
-    display: grid;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    place-items: center;
-    padding-bottom: 1em;
-    background-color: none;
-}
-
-#banner-index{
-    mask-image: radial-gradient(circle, black 50%, transparent 80%);
-    max-width: 800px;
-    width: 100%
-}
-
-#image-logo-art{
-    place-items: center;
-    width: 800px;
-    height: 600px;
 }
 
 .btn{
@@ -49,22 +23,159 @@ body{
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: all car(--transition-speed);
+    transition: all var(--transition-speed);
     font-family: inherit;
 }
 
+#image-logo-art{
+    width: 100px;
+    height: 100px;
+}
+
+/* main.html syling */
+/* header styling */
+.site-header{
+    position: relative;
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    position: relative;
+    border-bottom: solid var(--accent-line);
+}
+
+.site-header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: var(--aceent-line-hover);
+    transition: width calc(var(--transition-speed) *1.25) ease;
+}
+
+.site-header:hover:after{
+    width: 100%;
+}
+
+#head-brand{
+    /* color: var(--primary-heading); */
+    color: transparent;
+    background-image: url(/images/banner-realistic.svg) ;
+    background-size: 5.05em;
+    background-clip: text;
+    background-position: 0% 60%;
+    -webkit-background-clip: text;
+    font-size: 6rem;
+    font-weight: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+#head-brand:hover{
+    /* filter: drop-shadow(0 0 1.5rem #f18306e8); */
+    text-shadow: 
+        0 0 10px rgba(255, 140, 0, 0.2),
+        0 0 25px rgba(255, 120, 0, 0.1),
+        0 0 50px rgba(255, 80, 0, 0.05);
+}
+
+#para-motto{
+    color: var(--primary-heading);
+    font-size: 2.75rem;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 1.2%;
+    padding-bottom: 2.0%;
+}
+
+.nav-header-index{
+    color:white;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.nav-index-item{
+    position: relative;
+    color: var(--primary--links);
+    text-decoration: none;
+    background: none;
+    display: inline-block;
+    padding-bottom: 1;
+}
+
+.nav-index-item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #319cc6;
+    transition: width var(--transition-speed) ease;
+}
+
+.nav-index-item:hover::after{
+    width: 100%;
+}
+
+/* .nav-index-item:hover{
+    color: #0a0d4d;
+    background-color: none;
+    text-decoration: underline;
+    filter: drop-shadow(0 0 1.0rem #319cc6);
+    transform: translateY(-2px);
+
+} */
+
+#div-home{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    place-items: left;
+    height: 100px;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
 #btn-home{
+    width: 100px;
+    height: 100px;
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
+}
+
+/* Index.html styling */
+#banner-index{
+    mask-image: radial-gradient(circle, black 50%, transparent 85%);
+    max-width: 800px;
+    width: 100%
+}
+
+.center-wrapper{
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
     place-items: center;
-    filter: drop-shadow(0 0 2em #3178c6aa);
+    padding-bottom: 1em;
+    background-color: none;
 }
 
 #btn-enter-here{
     display: grid;
-    width: 20rem;
+    width: 15rem;
     height: 5rem;
     place-items: center;
     border-radius: 100;
@@ -74,7 +185,7 @@ body{
     padding: 15px 20px;
     background-color: var(--primary-color);
     color: rgb(175, 175, 175);
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     filter: drop-shadow(0 0 0.5em #3178c6aa);
     box-shadow: 
     0 0 5px rgba(26, 42, 108, 0.8),
@@ -85,16 +196,6 @@ body{
 #btn-enter-here:hover{
     background-color: var(--primary-hover);
     transform: translateY(-2px);
-}
-
-div{
-    place-items: center;
-}
-
-nav a{
-    color:white;
-    text-decoration: none;
-    margin-left: 1rem;
 }
 
 .hero{
@@ -115,3 +216,4 @@ nav a{
 .hero-overlay p{
     font-size: 1.25rem;
 }
+
