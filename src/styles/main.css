@@ -6,7 +6,8 @@
   --primary--links: #a8a8a8;
   --primary-hover: #0a0d4d;
   --accent-line: #e5e5e5;
-  --accent-line-hover: #ffae52;
+  --accent-line-hover: #ffae52; /*#ffae52*/
+  --accent-active: #ffc380;
   --transition-speed: 300ms;
 }
 
@@ -113,7 +114,8 @@ html, body{
     bottom: -3px;
     width: 0%;
     height: 1px;
-    background: #319cc6;
+    /* background: #319cc6; */
+    background: var(--accent-line-hover);
     transition: width calc(var(--transition-speed) * 0.75) ease;
 }
 
@@ -140,9 +142,9 @@ html, body{
 }
 
 #image-logo-art{
-    width: clamp(5em, 12vw, 15em);
-    height: clamp(5em, 12vw, 15em);
-    padding-top: 1%;
+    width: clamp(5em, 17vw, 21em);
+    height: clamp(5em, 17vw, 21em);
+    padding-top: 4.5%;
 }
 
 /* Navigation styling */
@@ -180,10 +182,6 @@ html, body{
     font-weight: 100;
     color: var(--primary-text);
 }
-
-/* .side-bar-head-name{
-    font-size: clamp(0.5rem, 5vw, 1rem);
-} */
 
 .side-bar-nav{
     padding-top: 20%;
@@ -241,7 +239,8 @@ html, body{
 }
 
 .side-bar-home-icon{
-    color: #ffc380;
+    /* color: #ffc380; */
+    color: var(--accent-active);
 }
 
 /* Index.html styling */
