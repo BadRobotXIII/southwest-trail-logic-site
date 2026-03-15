@@ -151,16 +151,10 @@ html, body{
 }
 
 #side-bar-container{
-    width: 17em;
+    width: clamp(8em, 17vw, 17em);
     min-height: 100vh;
     border-right: groove var(--accent-line);
     border-bottom: groove var(--accent-line);
-}
-
-.side-bar-header{
-    display: flex;
-    flex-direction: column;
-    height: auto;
 }
 
 #side-bar-brand-logo{
@@ -172,15 +166,24 @@ html, body{
     border-bottom: groove var(--accent-line);
 }
 
+#brand-logo-mono{
+    width: clamp(0.03em, 3vw, 3em);
+    height: clamp(0.03em, 3vw, 3em);
+}
+
 #side-bar-brand-name{
     display: flex;
     flex-direction: column;
     padding-top: 6%;
-    padding-left: 4%;  
-    font-size: 1.25em;
+    padding-left: 4%;
+    font-size: clamp(0.5em, 1.1vw, 1em);
     font-weight: 100;
-    color: var(--primary-hover);
+    color: var(--primary-text);
 }
+
+/* .side-bar-head-name{
+    font-size: clamp(0.5rem, 5vw, 1rem);
+} */
 
 .side-bar-nav{
     padding-top: 20%;
@@ -270,7 +273,7 @@ html, body{
     letter-spacing: 0.10rem;
     font-weight: 100;
     /* padding: 0.35em 0.35rem; */
-    font-size: clamp(.95rem, 1.75vw, 2rem);
+    font-size: clamp(.95rem, 6vw, 2rem);
     box-shadow:
     0 0 30px rgba(26, 42, 108, 0.8),
     0 0 30px rgba(26, 42, 108, 0.4);
