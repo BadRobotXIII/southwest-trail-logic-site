@@ -237,6 +237,10 @@ html, body{
     transform: translateX(2px);
 }
 
+.side-bar-home-icon{
+    color: #ffc380;
+}
+
 /* Index.html styling */
 #banner-index{
     mask-image: radial-gradient(circle, black 50%, transparent 85%);
