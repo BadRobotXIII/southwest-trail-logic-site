@@ -336,21 +336,24 @@ html, body{
 
 .trails-menu-1-chevron{
     margin-left: auto;
-    transition: transform 0.25s ease;
+    transition: transform 0.400s ease;
 }
 
 .trails-menu-1.open .trails-menu-1-chevron{
-    transform: rotate(90deg);
+    transform: rotate(90deg)
+        translateX(2px)
+        translateY(3px);
 }
 
 .trails-list-1{
-    /* max-height: 0em; */
+    max-height: 0em;
     overflow: hidden;
-    transition: max-height 0.25s ease;
+    transition: max-height 500ms ease;
 }
 
-.trails-menu-1.open .trails-list-1{
+.trails-menu-1.open + .trails-list-1{
     max-height: 10em;
+    transition: max-height 1000ms ease;
 }
 
 /* .trails-menu-1 {
