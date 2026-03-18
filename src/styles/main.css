@@ -356,25 +356,29 @@ html, body{
     transition: max-height 1000ms ease;
 }
 
-/* .trails-menu-1 {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.25s ease;
-} */
+/* Trails menu 2 */
+.trails-menu-2-chevron{
+    margin-left: auto;
+    transition: transform 0.400s ease;
+}
 
-
-
-/* .trails-menu-2 {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.25s ease;
+.trails-menu-2.open .trails-menu-2-chevron{
+    transform: rotate(90deg)
+        translateX(2px)
+        translateY(3px);
 }
 
 .trails-list-2{
-    max-height: 0;
+    max-height: 0em;
     overflow: hidden;
-    transition: max-height 0.25s ease;
-} */
+    transition: max-height 500ms ease;
+}
+
+.trails-menu-2.open + .trails-list-2{
+    max-height: 10em;
+    transition: max-height 1000ms ease;
+}
+
 
 /* Index.html styling */
 #banner-index{

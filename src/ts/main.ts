@@ -26,7 +26,7 @@ document.querySelectorAll('.trails-menu-2').forEach(item => {
 }); 
 
 // Select all elements where the class starts with "string-"
-// const menuTriggers = document.querySelectorAll<HTMLElement>('[class^="string-"]');
+// const menuTriggers = document.querySelectorAll<HTMLElement>('[class^="trails-menu-"]');
 
 // menuTriggers.forEach((trigger) => {
 //   trigger.addEventListener('click', () => {
@@ -47,8 +47,8 @@ document.querySelectorAll('.trails-menu-2').forEach(item => {
 // Here is a clean way to handle those nested toggles in TypeScript:
 
 // // Select all triggers (e.g., Trails, Arizona, Flagstaff, etc.)const toggles = document.querySelectorAll<HTMLElement>('[class^="string-"]');
-
-// toggles.forEach((trigger) => {
+// const menuTriggers = document.querySelectorAll<HTMLElement>('[class^="trail-menu-"]');
+// menuTriggers.forEach((trigger) => {
 //   trigger.addEventListener('click', (e) => {
 //     // Stop the click from bubbling up to parent menus
 //     e.stopPropagation();
