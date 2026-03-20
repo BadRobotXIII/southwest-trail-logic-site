@@ -3,206 +3,330 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="logos/icon.svg"/>
-    <link rel="stylesheet" href="src/styles/main.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"/>
-    <script type="module" src="/src/ts/main.ts"></script>    
-    <title>southwest-trail-logic-index</title>
+    <link rel="icon" type="image/svg+xml" href="logos/icon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <script type="module" src="/src/ts/main.ts"></script>
+    <title>Southwest Trail Logic</title>
   </head>
   <body>
     <div id="div-home">
-        <button id="btn-home">
-            <img class="" id="image-logo-art" src=/logos/logo-brand-trademark.svg alt="Southwest Trail Logic Logo" class=logo></img>
-        </button>
+      <button id="btn-home" type="button" aria-label="Return to home page">
+        <img
+          id="image-logo-art"
+          src="/logos/logo-brand-trademark.svg"
+          alt="Southwest Trail Logic logo"
+        />
+      </button>
     </div>
+
     <header class="site-header">
-        <h1 class="" id="head-brand">Southwest Trail Logic</h1>
-        <p class="" id="para-motto">Ride. Explore. Document.</p>
-        <nav class="nav-header-index" id="nav-index">
-            <i class="bi bi-play-circle nav-index-icon"></i>
-            <a class="nav-index-item" href="#videos">Videos</a>
-            <i class=" bi bi-camera nav-index-icon"></i>
-            <a class="nav-index-item" href="#photos">Photos</a>
-            <i class="bi bi-share nav-index-icon"></i>
-            <a class="nav-index-item" href="#social">Social</a>
-        </nav>
+      <h1 id="head-brand">Southwest Trail Logic</h1>
+      <p id="para-motto">Ride. Explore. Document.</p>
+      <nav
+        class="nav-header-index"
+        id="nav-index"
+        aria-label="Primary sections"
+      >
+        <i class="bi bi-play-circle nav-index-icon" aria-hidden="true"></i>
+        <a class="nav-index-item" href="#videos">Videos</a>
+        <i class="bi bi-camera nav-index-icon" aria-hidden="true"></i>
+        <a class="nav-index-item" href="#photos">Photos</a>
+        <i class="bi bi-share nav-index-icon" aria-hidden="true"></i>
+        <a class="nav-index-item" href="#social">Social</a>
+      </nav>
     </header>
-    <div>
-    <div class="side-bar" id="side-bar-pane">
-        <aside class="side-bar" id="side-bar-aside">
-            <!-- aside states expanded, collapsed, hidden -->
-            <div class="side-bar" id="side-bar-container">
-                <div class="side-bar" id="side-bar-header">
-                    <div class="side-bar" id="side-bar-brand-logo">
-                    <img class="" id="brand-logo-mono" src="/logos/logo-brand-mono-pack/logo-brand-mono-invert-w_48x48.svg" alt="brand logo">
-                    <div class="side-bar-head-name" id="side-bar-brand-name">Southwest Trail Logic</div>    
-                </div>
-                    
-                    
-                </div>
-                <div class="side-bar" id="side-bar-categories">
-                    <nav class="side-bar" id="side-bar-nav">
-                        <ul class="side-bar-list">
-                            <!-- Home -->
-                            <li>
-                                <div class="side-bar-cat" id="side-bar-home">
-                                    <i class="bi bi-house side-bar-cat-icon side-bar-home-icon"></i>
-                                    <p class="side-bar-home-icon">Home</p>
-                                </div>
-                            </li>
-                            <!-- Trails -->
-                            <li>
-                                <div class="side-bar-cat" id="side-bar-compass">
-                                    <i class="bi bi-compass side-bar-cat-icon"></i>
-                                    <p>Trails</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron"></i>
-                                </div>
-                                <ul class="side-bar-cat-content trails-menu-1">
-                                    <p>Arizona</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron trails-menu-1-chevron"></i>
-                                </ul>
-                                <ul class="trails-list-1">
-                                    <li class="side-bar-cat-content-list ">
-                                        <p>Flagstaff</p>
-                                    </li>
-                                    <li class="side-bar-cat-content-list">
-                                        <p>Sedona</p>
-                                    </li>
-                                    <li class="side-bar-cat-content-list">
-                                        <p>Prescott</p>
-                                    </li>
-                                </ul>
-                                <ul class="side-bar-cat-content trails-menu-2">
-                                    <p>Utah</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron trails-menu-2-chevron"></i>
-                                </ul>
-                                <ul class="trails-list-2">
-                                    <li class="side-bar-cat-content-list">
-                                        <p>Moab</p>
-                                    </li>
-                                    <li class="side-bar-cat-content-list">
-                                        <p>Cainville</p>
-                                    </li>
-                                </ul>
-                                    
-                            </li>
-                            <!-- Videos -->
-                            <li>
-                                <div class=" side-bar-cat" id="side-bar-videos">
-                                    <i class="bi bi-play-circle side-bar-cat-icon"></i>
-                                    <p>Videos</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron"></i>
-                                </div>
-                                <ul class="side-bar-cat-content">
-                                    <p>Video g1</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron"></i>
-       
-                                </ul>
-                                <ul>
-                                    <li class="side-bar-cat-content-list">
-                                        <p>Video g1-A</p>
-                                    </li>
-                                    <li class="side-bar-cat-content-list">
-                                        <p>Video g1-B</p>
-                                    </li>
-                                    <li class="side-bar-cat-content-list">
-                                        <p>Video g1-C</p>
-                                    </li>
-                                </ul>
-                                <ul class="side-bar-cat-content">
-                                    <p>Video g2</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron"></i>
-                                </ul>
-                                    <ul>
-                                        <li class="side-bar-cat-content-list">
-                                            <p>Video g2-A</p>
-                                        </li>
-                                        <li class="side-bar-cat-content-list">
-                                            <p>Video g2-B</p>
-                                        </li>
-                                    </ul>
-                            </li>                                
-                            <!-- Photos -->
-                            <li>
-                                <div class="side-bar-cat" id="side-bar-photos">
-                                    <i class="bi bi-camera side-bar-cat-icon"></i>
-                                    <p>Photos</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron"></i>
-                                </div>
-                            </li>
-                                <ul class="side-bar-cat-content">
-                                    <p>Arizona</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron"></i>
-       
-                                </ul>
-                                <ul>
-                                    <li class="side-bar-cat-content-list">
-                                        <p>Flagstaff</p>
-                                    </li>
-                                    <li class="side-bar-cat-content-list">
-                                        <p>Sedona</p>
-                                    </li>
-                                    <li class="side-bar-cat-content-list">
-                                        <p>Prescott</p>
-                                    </li>
-                                </ul>
-                                <ul class="side-bar-cat-content">
-                                    <p>Utah</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron"></i>
-                                </ul>
 
-                                    <ul>
-                                        <li class="side-bar-cat-content-list">
-                                            <p>Moab</p>
-                                        </li>
-                                        <li class="side-bar-cat-content-list">
-                                            <p>Cainville</p>
-                                        </li>
-                                    </ul>
-                            </li>                            
-                            <li>
-                                <div class="side-bar-cat" id="side-bar-social">
-                                    <i class="bi bi-share side-bar-cat-icon"></i>
-                                    <p>Social</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron"></i>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="side-bar-cat" id="side-bar-maps">
-                                    <i class="bi bi-map side-bar-cat-icon"></i>
-                                    <p>Maps</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron"></i>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="side-bar-cat" id="side-bar-explore">
-                                    <i class="bi bi-globe side-bar-cat-icon"></i>
-                                    <p>Explore</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron"></i>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="side-bar-cat" id="side-bar-about">
-                                    <i class="bi bi-info-circle side-bar-cat-icon"></i>
-                                    <p>About</p>
-                                    <i class="bi bi-chevron-right side-bar-chevron" id=""></i>
-                                </div>
-                            </li>
-                        </ul>
-
-                    </nav>
-                </div>
-                
+    <div class="page-shell">
+      <aside class="side-bar" id="side-bar-pane">
+        <div class="side-bar" id="side-bar-container">
+          <div class="side-bar" id="side-bar-header">
+            <div class="side-bar" id="side-bar-brand-logo">
+              <img
+                id="brand-logo-mono"
+                src="/logos/logo-brand-mono-pack/logo-brand-mono-invert-w_48x48.svg"
+                alt="Southwest Trail Logic brand mark"
+              />
+              <div class="side-bar-head-name" id="side-bar-brand-name">
+                Southwest Trail Logic
+              </div>
             </div>
-            <footer class="side-bar" id="side-bar-footer">
+          </div>
 
-            </footer>
-        </aside>
+          <div class="side-bar" id="side-bar-categories">
+            <nav id="side-bar-nav" aria-label="Site navigation">
+              <ul class="side-bar-list">
+                <li>
+                  <button
+                    class="side-bar-cat side-bar-cat--active"
+                    id="side-bar-home"
+                    type="button"
+                  >
+                    <i
+                      class="bi bi-house side-bar-cat-icon side-bar-home-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="side-bar-home-icon">Home</span>
+                  </button>
+                </li>
 
+                <li class="side-bar-group">
+                  <button
+                    class="side-bar-cat side-bar-toggle"
+                    id="side-bar-compass"
+                    type="button"
+                    data-toggle-target="trails-menu"
+                    aria-controls="trails-menu"
+                    aria-expanded="false"
+                  >
+                    <i
+                      class="bi bi-compass side-bar-cat-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Trails</span>
+                    <i
+                      class="bi bi-chevron-right side-bar-chevron"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <div class="side-bar-panel" id="trails-menu">
+                    <button
+                      class="side-bar-cat-content side-bar-toggle"
+                      type="button"
+                      data-toggle-target="trails-arizona"
+                      aria-controls="trails-arizona"
+                      aria-expanded="false"
+                    >
+                      <span>Arizona</span>
+                      <i
+                        class="bi bi-chevron-right side-bar-chevron"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                    <ul class="side-bar-sublist" id="trails-arizona">
+                      <li class="side-bar-cat-content-list">
+                        <span>Flagstaff</span>
+                      </li>
+                      <li class="side-bar-cat-content-list">
+                        <span>Sedona</span>
+                      </li>
+                      <li class="side-bar-cat-content-list">
+                        <span>Prescott</span>
+                      </li>
+                    </ul>
+
+                    <button
+                      class="side-bar-cat-content side-bar-toggle"
+                      type="button"
+                      data-toggle-target="trails-utah"
+                      aria-controls="trails-utah"
+                      aria-expanded="false"
+                    >
+                      <span>Utah</span>
+                      <i
+                        class="bi bi-chevron-right side-bar-chevron"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                    <ul class="side-bar-sublist" id="trails-utah">
+                      <li class="side-bar-cat-content-list">
+                        <span>Moab</span>
+                      </li>
+                      <li class="side-bar-cat-content-list">
+                        <span>Cainville</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="side-bar-group">
+                  <button
+                    class="side-bar-cat side-bar-toggle"
+                    id="side-bar-videos"
+                    type="button"
+                    data-toggle-target="videos-menu"
+                    aria-controls="videos-menu"
+                    aria-expanded="false"
+                  >
+                    <i
+                      class="bi bi-play-circle side-bar-cat-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Videos</span>
+                    <i
+                      class="bi bi-chevron-right side-bar-chevron"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <div class="side-bar-panel" id="videos-menu">
+                    <div class="side-bar-cat-content">
+                      <span>Featured rides</span>
+                    </div>
+                    <ul class="side-bar-sublist side-bar-sublist--static">
+                      <li class="side-bar-cat-content-list">
+                        <span>Video g1-A</span>
+                      </li>
+                      <li class="side-bar-cat-content-list">
+                        <span>Video g1-B</span>
+                      </li>
+                      <li class="side-bar-cat-content-list">
+                        <span>Video g1-C</span>
+                      </li>
+                    </ul>
+                    <div class="side-bar-cat-content">
+                      <span>Trail reports</span>
+                    </div>
+                    <ul class="side-bar-sublist side-bar-sublist--static">
+                      <li class="side-bar-cat-content-list">
+                        <span>Video g2-A</span>
+                      </li>
+                      <li class="side-bar-cat-content-list">
+                        <span>Video g2-B</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="side-bar-group">
+                  <button
+                    class="side-bar-cat side-bar-toggle"
+                    id="side-bar-photos"
+                    type="button"
+                    data-toggle-target="photos-menu"
+                    aria-controls="photos-menu"
+                    aria-expanded="false"
+                  >
+                    <i
+                      class="bi bi-camera side-bar-cat-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Photos</span>
+                    <i
+                      class="bi bi-chevron-right side-bar-chevron"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                  <div class="side-bar-panel" id="photos-menu">
+                    <div class="side-bar-cat-content"><span>Arizona</span></div>
+                    <ul class="side-bar-sublist side-bar-sublist--static">
+                      <li class="side-bar-cat-content-list">
+                        <span>Flagstaff</span>
+                      </li>
+                      <li class="side-bar-cat-content-list">
+                        <span>Sedona</span>
+                      </li>
+                      <li class="side-bar-cat-content-list">
+                        <span>Prescott</span>
+                      </li>
+                    </ul>
+                    <div class="side-bar-cat-content"><span>Utah</span></div>
+                    <ul class="side-bar-sublist side-bar-sublist--static">
+                      <li class="side-bar-cat-content-list">
+                        <span>Moab</span>
+                      </li>
+                      <li class="side-bar-cat-content-list">
+                        <span>Cainville</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <button
+                    class="side-bar-cat"
+                    id="side-bar-social"
+                    type="button"
+                  >
+                    <i
+                      class="bi bi-share side-bar-cat-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Social</span>
+                    <i
+                      class="bi bi-chevron-right side-bar-chevron"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="side-bar-cat" id="side-bar-maps" type="button">
+                    <i
+                      class="bi bi-map side-bar-cat-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Maps</span>
+                    <i
+                      class="bi bi-chevron-right side-bar-chevron"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="side-bar-cat"
+                    id="side-bar-explore"
+                    type="button"
+                  >
+                    <i
+                      class="bi bi-globe side-bar-cat-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Explore</span>
+                    <i
+                      class="bi bi-chevron-right side-bar-chevron"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="side-bar-cat"
+                    id="side-bar-about"
+                    type="button"
+                  >
+                    <i
+                      class="bi bi-info-circle side-bar-cat-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span>About</span>
+                    <i
+                      class="bi bi-chevron-right side-bar-chevron"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <footer class="side-bar" id="side-bar-footer"></footer>
+        </div>
+      </aside>
+
+      <main class="page-content">
+        <section class="hero" id="videos">
+          <div class="hero__content">
+            <p class="hero__eyebrow">Featured ride stories</p>
+            <h2>Built for trail footage, route notes, and trip planning.</h2>
+            <p class="hero__copy">
+            </p>
+          </div>
+        </section>
+
+        <section class="content-section" id="photos">
+          <h2>Photos</h2>
+          <p>Placeholder section for regional galleries and ride recaps.</p>
+        </section>
+
+        <section class="content-section" id="social">
+          <h2>Social</h2>
+          <p>
+            Placeholder section for social links, updates, and embedded content.
+          </p>
+        </section>
+      </main>
     </div>
-    </div>
-    <main>
-        <section class="hero"></section>
-    </main>  
-</body>      
-    
+  </body>
+</html>

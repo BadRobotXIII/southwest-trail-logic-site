@@ -3,17 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="logos/icon.svg" />
-    <link rel="stylesheet" href="/src/styles/main.css"/>
     <script type="module" src="/src/ts/main.ts"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>southwest-trail-logic-index</title>
+    <title>Southwest Trail Logic</title>
   </head>
   <body>
-    <h1>
-      <div class="center-wrapper">
-        <img class="banner" id="banner-index" src="../images/banner.svg"></img>
-        <button   lass="btn" id="btn-enter-here">Enter Here</button>
-      </div>
-    </h1>
+    <main class="landing-page">
+      <section class="center-wrapper" aria-labelledby="landing-title">
+        <h1 class="sr-only" id="landing-title">Southwest Trail Logic</h1>
+        <img
+          class="banner"
+          id="banner-index"
+          src="/images/banner.svg"
+          alt="Southwest Trail Logic banner"
+        />
+        <button class="btn" id="btn-enter-here" type="button">
+          Enter Here
+        </button>
+      </section>
+    </main>
   </body>
 </html>
